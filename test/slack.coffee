@@ -83,7 +83,7 @@ describe 'Getting the user from params', ->
 
 describe 'Sending a message', ->
   it 'Should JSON-ify args', ->
-    # Shim the post() methd to grab its args value
+    # Shim the post() method to grab its args value
     slack.post = (path, args) ->
       (-> JSON.parse args).should.not.throw()
 

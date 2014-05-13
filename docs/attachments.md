@@ -10,7 +10,7 @@ In your scripts you could emit event called 'slack-attachment' as described belo
 #   Demonstrating Slack Attachments.
 #
 # Commands:
-#   hubot demo-attachment - Demo Attachement
+#   hubot demo-attachment - Demo Attachment
 
 module.exports = (robot) ->
   robot.respond /demo-attachment$/i, (msg) =>
@@ -28,7 +28,7 @@ module.exports = (robot) ->
     payload = 
       message: msg.message
       content:
-        text: "Attachement Demo Text"
+        text: "Attachment Demo Text"
         fallback: "Fallback Text"
         pretext: "This is Pretext"
         color: "#FF0000"
